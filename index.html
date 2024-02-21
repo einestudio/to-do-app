@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="js.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <form action="#" method="get" class="form-example">
+        <div class="form-example">
+          <input type="text" name="task" id="task" />
+        </div>
+        <div class="form-example">
+          <input type="submit" value="Submit" id="knap" />
+        </div>
+      </form>
+
+      <h3>TO DO</h3>
+      <ul id="inProgressList"></ul>
+
+      <h3>DONE</h3>
+      <ul id="doneList"></ul>
+      <template>
+        <li>
+          <header>header</header>
+          <button type="button">button</button>
+          <button type="button" class="delete">delete</button>
+        </li>
+      </template>
+    </div>
+  </body>
+</html>
