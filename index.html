@@ -9,26 +9,33 @@
   </head>
 
   <body>
+    <button id="darkmode-toggle">Dark Mode</button>
     <div class="app">
       <form action="#" method="get" class="form-example">
         <div class="form-example">
-          <input type="text" name="task" id="task" />
+          <input type="text" name="task" id="task" placeholder="Enter task" />
         </div>
         <div class="form-example">
-          <input type="submit" value="Submit" id="knap" />
+          <input type="button" value="Submit" id="knap" />
         </div>
       </form>
 
-      <h3>TO DO</h3>
+      <div class="header-container">
+        <h3>TO DO</h3>
+      </div>
       <ul id="inProgressList"></ul>
 
-      <h3>DONE</h3>
+      <div class="header-container">
+        <h3>DONE</h3>
+      </div>
       <ul id="doneList"></ul>
       <template>
         <li>
-          <header>header</header>
-          <button type="button">button</button>
-          <button type="button" class="delete">delete</button>
+          <header class="task">header</header>
+          <div class="container">
+            <button type="button">button</button>
+            <button type="button" class="delete">Delete</button>
+          </div>
         </li>
       </template>
     </div>
